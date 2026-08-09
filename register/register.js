@@ -1,4 +1,8 @@
-let form = document.querySelector(".form");
+console.log("REGISTER JS LOADED");
+
+form = document.querySelector(".form");
+
+console.log("FORM:", form);
 let firstName = document.getElementById("fname");
 
 let email = document.getElementById("email");
