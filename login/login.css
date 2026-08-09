@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.15), rgba(0,0,0,.35)),
+    url("./dragon.jpg") center/cover no-repeat fixed;
+}
+
+.card{
+    width:380px;
+    padding:40px 35px;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(14px);
+    -webkit-backdrop-filter:blur(14px);
+    border:1px solid rgba(255,255,255,.35);
+    border-radius:20px;
+    box-shadow:
+        0 15px 40px rgba(0,0,0,.45);
+    transition:.4s;
+}
+
+.card:hover{
+    border-color:#d8c28f;
+    box-shadow:
+        0 0 20px rgba(216,194,143,.35),
+        0 15px 45px rgba(0,0,0,.5);
+}
+
+.title{
+    text-align:center;
+    font-size:35px;
+    font-family: fantasy;
+    color:#f1db82;
+    letter-spacing:4px;
+    margin-bottom:25px;
+    text-shadow:
+        0 0 10px rgba(74, 55, 6, 0.4);
+}
+.subtitle{
+    color: #f1db82;
+    font-family: cursive;
+    text-align: center;
+}
+.field{
+    margin-top:18px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    padding:14px 18px;
+    background:rgba(255,255,255,.08);
+    border:1px solid rgba(255,255,255,.25);
+    border-radius:10px;
+    transition:.3s;
+}
+
+.field:hover,
+.field:focus-within{
+    border-color:#d8c28f;
+    box-shadow:
+        0 0 12px rgba(216,194,143,.35);
+}
+.input-icon{
+    width:20px;
+    height:20px;
+    fill:#efe5d0;
+}
+
+.input-field{
+    width:100%;
+    background:none;
+    border:none;
+    outline:none;
+    color:#fff;
+    font-size:15px;
+}
+.input-field::placeholder{
+    color:#d0d0d0;
+}
+.field input:focus::placeholder{
+    opacity:0;
+}
+
+.btn{
+    width:100%;
+    margin-top:28px;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    color:#222;
+    font-size:16px;
+    font-weight:bold;
+    letter-spacing:2px;
+    background:linear-gradient(
+        135deg,
+        #f7f1d4,
+        #d8c28f
+    );
+    transition:.35s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:
+        0 0 15px rgba(255,255,255,.5),
+        0 0 30px rgba(216,194,143,.6);
+}
+
+.btn-link{
+    display:block;
+    margin-top:20px;
+    text-decoration:none;
+    color:#f0f0f0;
+    transition:.3s;
+}
+
+.btn-link{
+    color:#d8c28f;
+    font-weight:bold;
+    text-align: center;
+}
+.btn-link:hover{
+    color:rgb(61, 55, 55);
+}

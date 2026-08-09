@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragon Stone Register</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./register.css">
+</head>
+<body>
+<form class="form">
+    <h1 class="title">DRAGON STONE</h1>
+    <p class="subtitle">Create your warrior account</p>
+    <div class="flex">
+        <label>
+            <input class="input" type="text" required id="fname">
+            <span>First Name</span>
+        </label>
+        <label>
+            <input class="input" type="text" required id="lname">
+            <span>Last Name</span>
+        </label>
+
+    </div>
+
+    <label>
+        <input class="input" type="email" required id="email">
+        <span>Email</span>
+    </label>
+
+    <label>
+        <input class="input" type="password" required id="password">
+        <span>Password</span>
+    </label>
+    <label>
+        <input class="input" type="password" required id="confirmpassword">
+        <span>Confirm Password</span>
+    </label>
+    <button class="submit">
+        JOIN THE CLAN
+    </button>
+    <p class="signin">
+        Already a warrior?
+        <a href="../login/login.html">
+            Enter the Kingdom
+        </a>
+    </p>
+
+</form>
+
+<script src="./register.js"></script>
+
+</body>
+</html>
